@@ -1,0 +1,41 @@
+<div class="container-fluid seats-container">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <div class="card shadow-sm">
+                <div class="card-header">
+                    <span class="heading">Solve puzzle to Make Payment
+                    </span>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6 pt-2">
+                                <div class="d-flex justify-content-center">
+                                        <div class="numbers">
+                                            {{maxNumber}}
+                                        </div>
+                                        <div class="numbers">
+                                            {{sign}}
+                                        </div>
+                                        <div class="numbers">
+                                            {{minNumber}}
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Your Answer:</label>
+                            <input [(ngModel)]="answer" type="text" class="form-control" placeholder="Enter Answer">
+                        </div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <button (click)=check() type="button" class="btn btn-success btn-lg">Confirm my seats</button>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
